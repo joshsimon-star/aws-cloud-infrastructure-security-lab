@@ -34,6 +34,7 @@ The proposed architecture includes:
 - GitHub documentation
 
 ## Project Documentation
+- [Security Validation Plan](VALIDATION-PLAN.md)
 - [Security Controls Checklist](SECURITY-CONTROLS.md)
 - [Network Design](NETWORK-DESIGN.md) — VPC, subnets, routing, and security groups.
 - [Threat Model](THREAT-MODEL.md) — potential threats, mitigations, and a proposed monitoring plan.
