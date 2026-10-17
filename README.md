@@ -10,7 +10,7 @@ The project documents a proposed secure AWS network architecture and explains ho
 
 ## Architecture
 
-![AWS Cloud Security Architecture](aws-cloud-security-architecture.png)
+![AWS Cloud Security Architecture](aws-cloud-security-architecture%20(1).png)
 
 The proposed architecture includes:
 
