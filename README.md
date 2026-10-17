@@ -34,7 +34,7 @@ The proposed architecture includes:
 - GitHub documentation
 
 ## Project Documentation
-
+- [Security Controls Checklist](SECURITY-CONTROLS.md)
 - [Network Design](NETWORK-DESIGN.md) — VPC, subnets, routing, and security groups.
 - [Threat Model](THREAT-MODEL.md) — potential threats, mitigations, and a proposed monitoring plan.
 - [Architecture Diagram](aws-cloud-security-architecture.png) — visual overview of the proposed network.
