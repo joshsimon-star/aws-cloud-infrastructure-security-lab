@@ -29,14 +29,20 @@ The automated workflow completed the following checks successfully:
 
 The endpoint checks were performed using Flask's test client in the GitHub Actions runner.
 
+
 ## Docker
 
-**Status: Not yet tested**
+**Status: Build and container smoke test passed in GitHub Actions**
 
-- [ ] Build the Docker image
-- [ ] Run the container and test the API endpoints
+- [x] Build the Docker image
+- [x] Start the container in the GitHub Actions runner
+- [x] Request the `/health` endpoint and confirm it responds successfully
+- [x] Clean up the temporary test container
 
-The Dockerfile and `.dockerignore` file are present in the repository, but the image has not yet been built or run.
+The Docker image built successfully, and the container smoke test confirmed that the API's health endpoint responded as expected.
+
+**Scope:** These tests ran in a temporary GitHub Actions environment. The image has not been deployed to AWS or published to a container registry.
+n.
 
 ## AWS Deployment and Security Testing
 
