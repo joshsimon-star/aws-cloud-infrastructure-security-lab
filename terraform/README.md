@@ -45,3 +45,10 @@ Both security groups currently allow all outbound IPv4 traffic to any destinatio
 A future improvement is to review application requirements and restrict outbound traffic to necessary destinations, ports, and protocols where practical. Required DNS and application connectivity must be considered before narrowing these rules.
 
 Status: This is a documented design limitation identified during visual code review. Terraform has not been run for validation, and no AWS resources have been deployed or tested.
+## Known Security Limitation: Outbound Traffic
+
+Both security groups currently allow all outbound IPv4 traffic to any destination, port, and protocol. This is a broad baseline configuration and may increase risk if a resource is compromised.
+
+A future improvement is to review application requirements and restrict outbound traffic to necessary destinations, ports, and protocols where practical. Required DNS and application connectivity must be considered before narrowing these rules.
+
+**Status:** This is a documented design limitation identified during visual code review. Terraform has not been run for validation, and no AWS resources have been deployed or tested.
