@@ -58,3 +58,15 @@ Do not mark a test as passed unless it has actually been performed and the evide
 ## 7. Limitations
 
 This plan is a proposed validation procedure, not proof of a secure deployment. All tests remain planned until performed.
+## Terraform Formatting and Validation
+
+The following checks are planned but have not yet been run.
+
+- [ ] Run `terraform fmt -check` to check Terraform code formatting.
+- [ ] Run `terraform validate` to check the Terraform configuration for errors.
+- [ ] Review and document any errors that need to be corrected.
+
+**Current status:** These checks have not been executed. No AWS resources have been deployed or tested.
+
+
+
