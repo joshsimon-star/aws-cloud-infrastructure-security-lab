@@ -67,3 +67,14 @@ This checklist describes planned controls, not verified implementation. No live 
 - Test security group and routing behavior.
 - Configure and verify logging and threat detection.
 - Document evidence and results for each completed test.
+
+## Security Limitation: Broad Outbound Traffic
+
+Both the `public_web` and `private_internal` security groups currently allow all outbound IPv4 traffic to any destination.
+
+- **Risk:** Resources associated with these security groups may initiate connections to arbitrary IPv4 destinations. This can increase exposure to unwanted external communication and data exfiltration.
+- **Current status:** The broad outbound rules are intentionally documented as a known limitation in this lab. They have not been restricted.
+- **Recommended remediation:** Identify the destinations, protocols, and ports each resource requires. Where practical, restrict outbound traffic to those requirements and validate application functionality.
+- **Deployment note:** Review and address this limitation before using the configuration in a production environment.
+
+No AWS resources have been deployed as part of this review.
