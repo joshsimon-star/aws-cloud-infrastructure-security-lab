@@ -13,12 +13,19 @@ resource "aws_security_group" "public_web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  # SECURITY LIMITATION:
+  # Allows all outbound IPv4 traffic to any destination.
+  # This is broad access, not least privilege.
+  # Before deployment, review required destinations and protocols
+  # and restrict egress where practical.
   egress {
     description = "Outbound IPv4 traffic"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
   }
 
   tags = {
