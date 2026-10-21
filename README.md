@@ -70,4 +70,13 @@ This is a design and documentation project. The architecture has not been deploy
 
 This project develops practical understanding of cloud network architecture, network segmentation, routing, security group design, threat modeling, and technical documentation.
 
+## Project Documentation
+
+- [Architecture Diagram](./aws-cloud-security-architecture%20%281%29.png)
+- [Terraform Configuration](./terraform/README.md)
+- [Security Controls](./SECURITY-CONTROLS.md)
+- [Test Results](./TEST-RESULTS.md)
+- [Application Architecture](./APPLICATION-ARCHITECTURE.md)
+- [Project Roadmap](./ROADMAP.md)
+
 
